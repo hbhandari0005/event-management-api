@@ -5,8 +5,8 @@
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/event-management-ejs.git
-cd event-management-ejs
+git clone https://github.com/hbhandari0005/event-management-api
+cd event-management-api
 ```
 
 ### 2. Install dependencies
