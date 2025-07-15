@@ -1,0 +1,7 @@
+<form method="POST">
+  <select name="userId">
+    <% users.forEach(user => { %>
+    <option value="<%= user.id %>"><%= user.name %></option>
+    <% }) %></select
+  ><button>Register</button>
+</form>

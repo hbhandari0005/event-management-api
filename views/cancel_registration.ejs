@@ -1,0 +1,13 @@
+<h2>Cancel Registration</h2>
+<form method="POST">
+  <div>
+    <label for="userId">Select User:</label><br />
+    <select id="userId" name="userId" required>
+      <% users.forEach(user => { %>
+        <option value="<%= user.id %>"><%= user.name %> (<%= user.email %>)</option>
+      <% }) %>
+    </select>
+  </div>
+  <br />
+  <button type="submit">Cancel Registration</button>
+</form>

@@ -1,0 +1,14 @@
+<h1>All Events</h1>
+<a href="/users/new">Create User</a> |
+<a href="/events/new">Create Event</a>
+<ul>
+  <% events.forEach(event => { %>
+  <li>
+    <%= event.title %> -- <%= new Date(event.datetime).toLocaleString('en-US')
+    %> -
+    <a href="/events/<%= event.id %>/register">Register</a> --
+    <a href="/events/<%= event.id %>/stats">Stats</a> --
+    <a href="/events/<%= event.id %>/cancel">Cancel Registration</a>
+  </li>
+  <% }) %>
+</ul>
